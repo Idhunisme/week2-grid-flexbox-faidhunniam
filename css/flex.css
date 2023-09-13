@@ -1,0 +1,131 @@
+.flex-container1{
+  display: flex;
+  margin-top: -20px;
+}
+.flex-container1 sidebar{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  flex: 200px 0 0;
+  background-color: black;
+  padding: 40px 0;
+}
+.flex-container1 sidebar img{
+  text-align: center;
+  border-radius: 20px;
+  width: 100%;
+}
+.flex-container1 main{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  flex: 1 1;
+  background-color: black;
+  color: aliceblue;
+  padding: 0 50px;
+}
+.flex-container1 h2{
+  background-color: black;
+  display: inline-block;
+}
+.flex-container2{
+  display: flex;
+}
+.flex-container2 > div{
+  flex: 1;
+}
+.mt-2{
+  margin-top: 3rem;
+}
+.mb-1{
+  margin-bottom: 1.5rem;
+}
+#education h1{
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+.flex-container3{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card{
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+  flex-basis: 220px;
+  margin-bottom: 40px;
+}
+.card img{
+  width: 100%;
+}
+.card h4{
+  margin-bottom: 5px;
+}
+
+/* Layout Tablet */
+@media(max-width:900px){
+  .flex-container1{
+    text-align: center;
+    font-size: 23px;
+    flex-direction: column;
+  }
+  .flex-container2{
+    flex-direction: column;
+  }
+  .flex-container1 sidebar{
+    border-radius: 0px 0px 30px 30px;
+    order: 1;
+    text-align: center;
+  }
+  .flex-container1 main{
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+  }
+  .flex-container1 sidebar img{
+    border-radius: 20px;
+    width: 40%;
+  }
+  .flex-container3{
+    flex-direction: column;
+  }
+  .card{
+    font-size: 30px;
+  }
+  .card img{
+    width: 50%;
+  }
+}
+
+/* Layout Smartphone */
+@media(max-width:600px){
+  .flex-container1{
+    text-align: center;
+    flex-direction: column;
+  }
+  .flex-container2{
+    flex-direction: column;
+  }
+  .flex-container1 sidebar{
+    order: 1;
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+  }
+  .flex-container1 main{
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+  }
+  .flex-container1 sidebar img{
+    border-radius: 20px;
+    width: 65%;
+  }
+  .flex-container3{
+    flex-direction: column;
+  }
+  .card{
+    font-size: 20px;
+  }
+  .card img{
+    width: 50%;
+  }
+}
